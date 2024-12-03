@@ -1,0 +1,363 @@
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+.box {
+  position: relative;
+}
+/* flex-container */
+.container {
+  max-width: 1300px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  background-color: rgb(51, 44, 44);
+  color: white;
+  height: 100px;
+}
+.navbar .logo {
+  font-size: 80px;
+  font-weight: bold;
+  justify-items: center;
+  margin-left: 300px;
+}
+
+.navbar ul {
+  color: rgb(248, 230, 128);
+  font-size: 25px;
+  display: flex;
+  list-style: none;
+}
+/* Change the colour when touched */
+.navbar ul :hover {
+  color: rgb(252, 249, 246);
+  cursor: grab;
+}
+.navbar .container {
+  display: flex;
+  flex-direction: end;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.navbar ul li {
+  margin-left: 100px;
+  margin-right: 0px;
+}
+.nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logo {
+  animation: logo;
+  animation-duration: 3s;
+  animation-fill-mode: left;
+  position: relative;
+}
+/* Animation for logo */
+@keyframes logo {
+  0% {
+    right: 600px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.top .text {
+  position: relative;
+  animation-name: text;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+/* Animation for text on the first image */
+@keyframes text {
+  0% {
+    bottom: -500px;
+  }
+  100% {
+    bottom: 800px;
+  }
+}
+/* paragraph in the middle of the page */
+.bottom {
+  font-style: normal;
+  background-color: brown;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  border: solid rgb(0, 0, 0) 5px;
+}
+/* text decoloration in the logo */
+span {
+  color: brown;
+  font-family: Brush script MT;
+  font-size: larger;
+}
+
+.top {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Text in the middle of the image which is top part in main */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  font-size: 30px;
+  justify-content: stretch;
+}
+.figure {
+  text-align: center;
+  margin: 0%;
+}
+.image .centered {
+  padding: 0%;
+  font-size: 40px;
+  width: 30%;
+  line-height: 1.3em;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+/* Footer */
+#footer {
+  padding: 20px;
+  background-color: rgb(158, 91, 91);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+}
+
+/*Contact us page*/
+legend {
+  font-weight: bold;
+  font-size: 20px;
+}
+.formgroup {
+  display: block;
+}
+
+input {
+  width: 20%;
+}
+label {
+  font-family: tahoma, sans-serif;
+}
+/*  form input */
+input[type="text"],
+input[type="email"],
+input[type="textarea"] {
+  padding: 2px 2px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid brown;
+}
+input[type="submit"] {
+  background-color: brown;
+  color: white;
+}
+.index {
+  position: fixed;
+  top: 300px;
+  left: 0px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+fieldset {
+  background-color: lightgoldenrodyellow;
+}
+
+/* MENU PAGE */
+
+/* container for menu page */
+#menu-container {
+  background-color: rgb(241, 232, 221);
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+/* title(order here) */
+#title {
+  display: flex;
+  background-color: rgb(177, 153, 153);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  font-weight: bold;
+  padding-left: 700px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* cart icon on header */
+header .cart {
+  position: relative;
+  left: 800px;
+  bottom: 50px;
+  cursor: pointer;
+}
+/* number on cart icon of header */
+header .cart span {
+  width: 30px;
+  height: 25px;
+  background-color: rgb(95, 39, 39);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* All the images on menu page */
+.parent img {
+  width: 400px;
+  height: 300px;
+  border: 2px solid #ff3d0036;
+  border-radius: 13px;
+  box-shadow: 4px 7px 7px 0px #00000042;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
+  object-fit: cover;
+}
+/* for colorgray effect on images */
+div img:hover {
+  filter: grayscale(1);
+  transform: scale(1.03);
+}
+/* Add to cart button on all images */
+.cart-button {
+  padding: 0px;
+  width: 100px;
+  height: 40px;
+  font-size: medium;
+  font-weight: 600;
+  font: bold;
+  cursor: pointer;
+  font-style: none;
+  font-size: small;
+}
+
+/*  shopping cart side tab  */
+.cartTab {
+  width: 0px;
+  background-color: rgb(77, 55, 55);
+  color: white;
+  position: fixed;
+  inset: 0 0 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transition: width 0.5s;
+}
+.open {
+  width: 400px;
+}
+/* Heading of shopping cart side tab */
+.cartTab h2 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background-color: blanchedalmond;
+  color: brown;
+  font-weight: 600;
+  border: 10px solid rgb(77, 55, 55);
+  padding: 12px;
+}
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn .button {
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* close tab in shopping cart tab */
+.cartTab .btn .close {
+  background-color: blanchedalmond;
+  color: brown;
+  font-weight: 600;
+  cursor: pointer;
+  border: 10px solid rgb(77, 55, 55);
+  padding: 12px;
+}
+/* open tab in shopping cart tab */
+.cartTab .btn .checkout {
+  background-color: blanchedalmond;
+  color: brown;
+  font-weight: 600;
+  border: 10px solid rgb(77, 55, 55);
+  padding: 12px;
+}
+/* for image on shopping cart tab */
+.cartTab .listCart .item img {
+  width: 100%;
+}
+.cartTab .listCart .item {
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.listCart .quantity span {
+  color: white;
+  text-decoration: none;
+  font-style: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.listCart {
+  overflow: auto;
+}
+section .showCart .cartTab {
+  inset: 0 0 0 auto;
+}
+section .showCart .container {
+  transform: translateX(-250px);
+}
+/* Shopping cart bottom part */
+div.quantity span.minus {
+  color: rgb(102, 66, 66);
+}
+div.quantity span.plus {
+  color: rgb(102, 66, 66);
+}
+
+div.quantity span.number {
+  color: rgb(102, 66, 66);
+}

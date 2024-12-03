@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu page</title>
+    <link href="mission1.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!--Header -->
+    <main id="menu-container">
+      <header>
+        <div id="title"><h1>Order Here</h1></div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="quantityItems">0</span>
+        </div>
+      </header>
+      <!--  cart holding all the food images -->
+      <div class="grid">
+        <div class="holder">
+          <div class="parent">
+            <image src="images/doughnuts-donuts.webp" alt="doughnuts-donuts" />
+          </div>
+          <div class="child">
+            <h3>Donuts-$4</h3>
+          </div>
+          <button class="cart-button">Add to cart</button>
+        </div>
+        <!-- cupcakes -->
+        <div class="holder">
+          <div class="parent">
+            <image src="images/muffin.webp" alt="muffin" />
+          </div>
+          <div class="child">
+            <h3>Cupcakes-$5</h3>
+          </div>
+          <button class="cart-button">Add to cart</button>
+        </div>
+        <!-- Muffins -->
+        <div>
+          <div class="parent">
+            <image src="images/breads.jpg" alt="breads" />
+          </div>
+          <div class="child">
+            <h3>Bread-$6</h3>
+          </div>
+          <button class="cart-button">Add to cart</button>
+        </div>
+        <!-- Milk Shakes -->
+        <div>
+          <div class="parent">
+            <image src="images/milkshake.webp" alt="milkshake" />
+          </div>
+          <div class="child">
+            <h3>Milkshakes-$10</h3>
+          </div>
+          <button class="cart-button">Add to cart</button>
+        </div>
+        <!-- Croissants -->
+        <div>
+          <div class="parent">
+            <image src="images/Croissants-01.jpg" alt="Croissants-01" />
+          </div>
+          <div class="child">
+            <h3>Croissants-$8</h3>
+          </div>
+          <button class="cart-button">Add to cart</button>
+        </div>
+        <!-- Macarons -->
+        <div>
+          <div class="parent">
+            <image src="images/macarons.avif" alt="macarons" />
+          </div>
+          <div class="child">
+            <h3>Macarons-$7</h3>
+          </div>
+          <button class="cart-button">
+            Add to cart
+            <i class="fas-fa-box"></i>
+          </button>
+        </div>
+        <!-- Sandwich -->
+        <div>
+          <div class="parent">
+            <image src="images/Egg-Salad-Sandwich.jpg" alt="ham-sandwich" />
+          </div>
+          <div class="child">
+            <h3>Sandwich-$7</h3>
+          </div>
+          <button class="cart-button">
+            Add to cart
+            <i class="fas-fa-box"></i>
+          </button>
+        </div>
+        <!-- Cookies -->
+        <div>
+          <div class="parent">
+            <image src="images/miso_cookies.jpg" alt="cookies" />
+          </div>
+          <div class="child">
+            <h3>Cookies-$7</h3>
+          </div>
+          <button class="cart-button">
+            Add to cart
+            <i class="fas-fa-box"></i>
+          </button>
+        </div>
+      </div>
+      <!-- shopping cart side tab -->
+      <!-- top part -->
+      <section class="showCart">
+        <div class="cartTab">
+          <h2>Shopping Cart</h2>
+          <div class="listCart">
+            <!-- comment this if using for loop to display products -->
+            <div class="item">
+              <image
+                src="images/doughnuts-donuts.webp"
+                alt="doughnuts-donuts"
+              />
+              <div class="name">Donuts</div>
+              <div class="totalPrice">$4</div>
+              <div class="quantity">
+                <span class="minus">-</span>
+                <span class="number">1</span>
+                <span class="plus"> + </span>
+              </div>
+            </div>
+            <!--until here  -->
+          </div>
+
+          <!-- bottom part -->
+          <div class="btn">
+            <div class="close">CLOSE</div>
+            <div class="checkout">CHECK OUT</div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer id="footer">
+        <p>Copyright &copy; 2024 by Harika Vonguri, All rights reserved</p>
+      </footer>
+      <!-- Home Button on all pages -->
+      <a class="index" href="index.html">HOME</a>
+    </main>
+  </body>
+</html>
